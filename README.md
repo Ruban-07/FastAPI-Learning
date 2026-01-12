@@ -19,3 +19,31 @@ python3 -m venv env
 
 # your env name can be any thing, I said named as 'env'
 ```
+
+## Installing FastAPI:
+
+We can install `FastAPI` using `pip`:
+
+```python
+pip install fastapi
+```
+
+Once the installation completed, we can confirm the installing in the python `CLI`.
+
+Open you terminal, run:
+
+```python
+python3
+```
+
+This will run the python `CLI`, on the `CLI` opened, the import the `FastAPI` and check the version:
+
+```Python
+import fastapi
+```
+
+```python
+print(fastapi.__version__)
+```
+
+It'll print the installed FastAPI version. If not, then you may did any mistake while installing, so verify again.
