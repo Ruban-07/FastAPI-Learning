@@ -47,3 +47,44 @@ print(fastapi.__version__)
 ```
 
 It'll print the installed FastAPI version. If not, then you may did any mistake while installing, so verify again.
+
+## Building Simple Web Server:
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get('/')
+async def get_root():
+    return {
+        "message":"Be Happy!"
+    }
+```
+
+To run as development mode:
+
+```python
+fastapi dev
+```
+
+To run as production mode:
+
+```python
+fastapi run
+```
+
+Once we run this, the server will started in particular port url, the we can open and see the response.
+
+```python
+http://127.0.0.1:8000
+```
+
+```python
+# Output:
+
+{
+  "message": "Be Happy!"
+}
+
+```
